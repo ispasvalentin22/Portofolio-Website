@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Outfit } from "next/font/google";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import WavyLines from "@/components/WavyLines";
 import "./globals.css";
 
@@ -33,6 +34,7 @@ export default function RootLayout({
           <WavyLines />
         </div>
         {children}
+        <SpeedInsights />
       </body>
     </html>
   );

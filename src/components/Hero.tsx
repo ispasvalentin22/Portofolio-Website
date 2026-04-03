@@ -18,6 +18,9 @@ export default function Hero() {
         <div className={styles.actions}>
           <a href="#projects" className="btn-primary">View My Work</a>
           <a href="#contact" className="btn-outline">Contact Me</a>
+          <a href="https://www.linkedin.com/in/ispasvalentin" target="_blank" rel="noopener noreferrer" className="btn-outline">
+            LinkedIn
+          </a>
         </div>
       </div>
     </section>

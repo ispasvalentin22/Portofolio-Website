@@ -43,6 +43,8 @@ export default function Contact() {
           <p className={styles.text}>
             I'm currently looking for new opportunities. Whether you have a question,
             a proposal, or just want to say hi, I'll try my best to get back to you!
+            <br /><br />
+            You can also connect with me on <a href="https://linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer" style={{color: 'var(--accent-color)', textDecoration: 'underline'}}>LinkedIn</a>.
           </p>
 
           <form className={styles.form} onSubmit={handleSubmit}>

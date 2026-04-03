@@ -147,11 +147,15 @@ a:hover {
 
 /* Typography utilities */
 .text-accent {
-  color: var(--accent-color);
+  background: linear-gradient(135deg, #F59E0B 0%, #FF5722 50%, #E11D48 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  display: inline-block;
 }
 
 .text-gradient {
-  background: linear-gradient(135deg, #FF5722 0%, #ff8a65 100%);
+  background: linear-gradient(135deg, #F59E0B 0%, #FF5722 50%, #E11D48 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -219,7 +223,10 @@ a:hover {
 }
 
 .section-title span {
-  color: var(--accent-color);
+  background: linear-gradient(135deg, #F59E0B 0%, #FF5722 50%, #E11D48 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 /* Animations */

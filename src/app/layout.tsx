@@ -3,6 +3,8 @@ import { Inter, Outfit } from "next/font/google";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/next";
 import WavyLines from "@/components/WavyLines";
+import Navbar from "@/components/Navbar";
+import ScrollProgress from "@/components/ScrollProgress";
 import "./globals.css";
 
 const inter = Inter({
@@ -28,6 +30,8 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${outfit.variable}`}>
       <body>
+        <ScrollProgress />
+        <Navbar />
         <div className="background-wrapper">
           <div className="blob blob-1"></div>
           <div className="blob blob-2"></div>

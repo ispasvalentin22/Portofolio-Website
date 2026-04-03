@@ -24,7 +24,9 @@ export default function Skills() {
         {skills.map((skill, index) => (
           <Reveal key={index} delay={0.2 + index * 0.05}>
             <div className={styles.skillPill}>
-              {skill}
+              <div className={styles.skillInner}>
+                {skill}
+              </div>
             </div>
           </Reveal>
         ))}

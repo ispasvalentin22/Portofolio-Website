@@ -36,24 +36,26 @@ export default function Projects() {
         {projects.map((project, index) => (
           <Reveal key={index} delay={0.2 + index * 0.1}>
             <div className={styles.card}>
-              <div className={styles.imageArea}></div>
-              <div className={styles.content}>
-                <h3 className={styles.title}>{project.title}</h3>
-                <p className={styles.description}>{project.description}</p>
-                
-                <div className={styles.techStack}>
-                  {project.tech.map((t, i) => (
-                    <span key={i} className={styles.techItem}>{t}</span>
-                  ))}
-                </div>
-                
-                <div className={styles.links}>
-                  <a href={project.github} className={styles.link} title="GitHub Repo">
-                    <span>GitHub</span>
-                  </a>
-                  <a href={project.demo} className={styles.link} title="Live Demo">
-                    <span>External Demo</span>
-                  </a>
+              <div className={styles.cardInner}>
+                <div className={styles.imageArea}></div>
+                <div className={styles.content}>
+                  <h3 className={styles.title}>{project.title}</h3>
+                  <p className={styles.description}>{project.description}</p>
+                  
+                  <div className={styles.techStack}>
+                    {project.tech.map((t, i) => (
+                      <span key={i} className={styles.techItem}>{t}</span>
+                    ))}
+                  </div>
+                  
+                  <div className={styles.links}>
+                    <a href={project.github} className={styles.link} title="GitHub Repo">
+                      <span>GitHub</span>
+                    </a>
+                    <a href={project.demo} className={styles.link} title="Live Demo">
+                      <span>External Demo</span>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>

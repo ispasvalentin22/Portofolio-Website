@@ -18,8 +18,31 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: "Portfolio | Full Stack Developer",
-  description: "Personal portfolio showcasing my work, skills, and experience as a Full Stack Developer.",
+  title: "Valentin Ispas | Full Stack Developer",
+  description: "Personal portfolio showcasing my work, skills, and experience as a Full Stack Developer. Building premium and performant web applications.",
+  keywords: ["Valentin Ispas", "Full Stack Developer", "React", "Next.js", "Portfolio", "Web Development"],
+  openGraph: {
+    title: "Valentin Ispas | Full Stack Developer",
+    description: "Premium personal portfolio showcasing my software engineering projects and technical skills.",
+    url: "https://your-portfolio-domain.vercel.app",
+    siteName: "Valentin Ispas Portfolio",
+    images: [
+      {
+        url: "/profile.jpg", // Replace with an absolute URL or specific OG image when deploying to your real domain
+        width: 1200,
+        height: 630,
+        alt: "Valentin Ispas Portfolio Presentation",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Valentin Ispas | Full Stack Developer",
+    description: "Premium personal portfolio showcasing my software engineering projects and technical skills.",
+    images: ["/profile.jpg"],
+  },
 };
 
 export default function RootLayout({

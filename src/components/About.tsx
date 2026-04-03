@@ -8,52 +8,48 @@ export default function About() {
       <Reveal>
         <h2 className="section-title">About <span>Me</span></h2>
       </Reveal>
-      
+
       <div className={styles.about}>
         <Reveal delay={0.2}>
           <div className={styles.imageWrapper}>
             <div className={styles.imagePlaceholder}>
-              <Image 
-                src="/profile.jpg" 
-                alt="Valentin" 
+              <Image
+                src="/profile.jpg"
+                alt="Valentin Ispas - Full Stack Web Developer"
                 width={500}
                 height={500}
                 priority
-                style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '24px' }} 
+                style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '24px' }}
               />
             </div>
           </div>
         </Reveal>
-        
+
         <div className={styles.content}>
           <Reveal delay={0.4}>
             <p className={styles.text}>
-              Hello! I'm a passionate Full Stack Developer with an eye for design. 
-              I enjoy creating things that live on the internet, whether that be websites, 
-              applications, or anything in between. My goal is to always build products 
-              that provide pixel-perfect, performant experiences.
+              Hello! I am an innovative software engineer with 5 years of experience in
+              JavaScript development. Possess a strong background in analyzing,
+              designing, and implementing business applications using the
+              Node.js in the Back-End and various Front-End technologies like
+              Angular or React. I have excellent problem-solving skills, a
+              dedication to quality and a drive for continuous improvement.
             </p>
           </Reveal>
-          
-          <Reveal delay={0.5}>
+
+          {/* <Reveal delay={0.5}>
             <p className={styles.text}>
-              I believe that functional and aesthetic are not mutually exclusive. 
-              By merging the latest technologies with stunning user interfaces, I deliver 
+              I believe that functional and aesthetic are not mutually exclusive.
+              By merging the latest technologies with stunning user interfaces, I deliver
               applications that not only work flawlessly but also leave a lasting impression.
             </p>
-          </Reveal>
-          
+          </Reveal> */}
+
           <div className={styles.statsRow}>
             <Reveal delay={0.6}>
               <div className={styles.statItem}>
                 <span className={styles.statValue}>5+</span>
                 <span className={styles.statLabel}>Years Exp</span>
-              </div>
-            </Reveal>
-            <Reveal delay={0.7}>
-              <div className={styles.statItem}>
-                <span className={styles.statValue}>50+</span>
-                <span className={styles.statLabel}>Projects</span>
               </div>
             </Reveal>
             <Reveal delay={0.8}>

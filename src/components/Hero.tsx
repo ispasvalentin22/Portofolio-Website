@@ -12,7 +12,7 @@ export default function Hero() {
           Full Stack Developer
         </h2>
         <p className="text-secondary" style={{ marginBottom: '40px', fontSize: '1.1rem', maxWidth: '600px', margin: '0 auto 40px' }}>
-          I build premium, aesthetic, and highly functional web applications. 
+          I build premium, aesthetic, and highly functional and complex web applications.
           Bridging the gap between brilliant design and robust performance.
         </p>
         <div className={styles.actions}>

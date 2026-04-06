@@ -1,14 +1,40 @@
 import Reveal from './Reveal';
 import styles from './Skills.module.css';
 
-export default function Skills() {
-  const skills = [
-    "JavaScript", "TypeScript", "Node.js", "Express",
-    "Angular", "React", "PostgreSQL", "MongoDB", "Redis", "REST", "GraphQL",
-    "Tailwind CSS", "Git", "Docker", "Kubernetes", "Grafana", "Jest",
-    "AWS Lambda", "SQS", "RabbitMQ", "GitLab"
-  ];
+const skillCategories = [
+  {
+    name: "Languages",
+    icon: "</>",
+    skills: ["JavaScript", "TypeScript"],
+  },
+  {
+    name: "Frontend",
+    icon: "🎨",
+    skills: ["Angular", "React", "Tailwind CSS"],
+  },
+  {
+    name: "Backend",
+    icon: "⚙️",
+    skills: ["Node.js", "Express", "REST", "GraphQL"],
+  },
+  {
+    name: "Databases",
+    icon: "🗄️",
+    skills: ["PostgreSQL", "MongoDB", "Redis"],
+  },
+  {
+    name: "Cloud & DevOps",
+    icon: "☁️",
+    skills: ["Docker", "Kubernetes", "AWS Lambda", "GitLab", "Git"],
+  },
+  {
+    name: "Messaging & Testing",
+    icon: "📡",
+    skills: ["SQS", "RabbitMQ", "Grafana", "Jest"],
+  },
+];
 
+export default function Skills() {
   return (
     <section className="section container" id="skills">
       <Reveal>
@@ -17,16 +43,26 @@ export default function Skills() {
 
       <Reveal delay={0.2}>
         <p className="text-secondary" style={{ textAlign: 'center', maxWidth: '600px', margin: '0 auto' }}>
-          Here are a few technologies I've been working with recently.
+          Here are a few technologies I&apos;ve been working with recently.
         </p>
       </Reveal>
 
-      <div className={styles.skills}>
-        {skills.map((skill, index) => (
-          <Reveal key={index} delay={0.2 + index * 0.05}>
-            <div className={styles.skillPill}>
-              <div className={styles.skillInner}>
-                {skill}
+      <div className={styles.categoriesGrid}>
+        {skillCategories.map((category, catIndex) => (
+          <Reveal key={category.name} delay={0.2 + catIndex * 0.1}>
+            <div className={styles.categoryCard}>
+              <div className={styles.categoryHeader}>
+                <span className={styles.categoryIcon}>{category.icon}</span>
+                <h3 className={styles.categoryName}>{category.name}</h3>
+              </div>
+              <div className={styles.skillsList}>
+                {category.skills.map((skill) => (
+                  <div key={skill} className={styles.skillPill}>
+                    <div className={styles.skillInner}>
+                      {skill}
+                    </div>
+                  </div>
+                ))}
               </div>
             </div>
           </Reveal>

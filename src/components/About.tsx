@@ -1,5 +1,8 @@
+"use client";
+
 import Image from 'next/image';
 import Reveal from './Reveal';
+import CountUp from './CountUp';
 import styles from './About.module.css';
 
 export default function About() {
@@ -37,24 +40,20 @@ export default function About() {
             </p>
           </Reveal>
 
-          {/* <Reveal delay={0.5}>
-            <p className={styles.text}>
-              I believe that functional and aesthetic are not mutually exclusive.
-              By merging the latest technologies with stunning user interfaces, I deliver
-              applications that not only work flawlessly but also leave a lasting impression.
-            </p>
-          </Reveal> */}
-
           <div className={styles.statsRow}>
             <Reveal delay={0.6}>
               <div className={styles.statItem}>
-                <span className={styles.statValue}>5+</span>
+                <span className={styles.statValue}>
+                  <CountUp end={5} duration={1500} suffix="+" />
+                </span>
                 <span className={styles.statLabel}>Years Exp</span>
               </div>
             </Reveal>
             <Reveal delay={0.8}>
               <div className={styles.statItem}>
-                <span className={styles.statValue}>100%</span>
+                <span className={styles.statValue}>
+                  <CountUp end={100} duration={2000} suffix="%" />
+                </span>
                 <span className={styles.statLabel}>Dedicated</span>
               </div>
             </Reveal>

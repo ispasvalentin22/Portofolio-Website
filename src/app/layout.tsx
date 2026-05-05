@@ -63,7 +63,7 @@ export default function RootLayout({
         </div>
         {children}
         <SpeedInsights />
-        <Analytics />
+        {process.env.VERCEL_ENV === "production" && <Analytics />}
       </body>
     </html>
   );

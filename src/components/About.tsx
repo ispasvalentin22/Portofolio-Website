@@ -31,12 +31,7 @@ export default function About() {
         <div className={styles.content}>
           <Reveal delay={0.4}>
             <p className={styles.text}>
-              Hello! I am an innovative software engineer with 5 years of experience in
-              JavaScript development. Possess a strong background in analyzing,
-              designing, and implementing business applications using the
-              Node.js in the Back-End and various Front-End technologies like
-              Angular or React. I have excellent problem-solving skills, a
-              dedication to quality and a drive for continuous improvement.
+              With 5 years of full-stack engineering experience, I partner with companies to solve complex technical challenges and deliver robust, scalable software. Whether it involves optimizing backend performance, designing seamless frontend architectures, or untangling complex business logic, I focus on building reliable solutions that drive true business value and operational efficiency.
             </p>
           </Reveal>
 

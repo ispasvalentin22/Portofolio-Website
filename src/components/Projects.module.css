@@ -88,6 +88,43 @@
   margin-bottom: 24px;
 }
 
+.context {
+  color: var(--text-secondary);
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 24px;
+  padding-left: 14px;
+  border-left: 3px solid var(--accent-color);
+  font-style: italic;
+  opacity: 0.85;
+}
+
+.highlights {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 32px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  flex: 1;
+}
+
+.highlightItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+
+.highlightIcon {
+  color: var(--accent-color);
+  font-size: 0.75rem;
+  margin-top: 5px;
+  flex-shrink: 0;
+}
+
 .description {
   color: var(--text-secondary);
   font-size: 1.05rem;

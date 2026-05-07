@@ -41,14 +41,25 @@ export default function Contact() {
         <div className={styles.contact}>
           <h2 className="section-title">Get In <span>Touch</span></h2>
           <p className={styles.text}>
-            I'm currently looking for new opportunities. Whether you have a question,
-            a proposal, or just want to say hi, I'll try my best to get back to you!
+            I'm currently open to new opportunities. Whether you have a technical challenge, a project proposal, or just want to connect, I'd love to hear from you!
             <br /><br />
-            You can also connect with me on <a href="https://www.linkedin.com/in/ispasvalentin" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--accent-color)', textDecoration: 'underline' }}>LinkedIn</a>.
+            <span style={{ fontSize: '0.95rem', opacity: 0.9 }}>
+              Not a fan of forms? Grab 15 minutes on my <a href="https://calendly.com/valentinmarian-ispas/30min" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--accent-color)', textDecoration: 'underline' }}>Calendly</a> or connect on <a href="https://www.linkedin.com/in/ispasvalentin" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--accent-color)', textDecoration: 'underline' }}>LinkedIn</a>.
+            </span>
           </p>
 
           <form className={styles.form} onSubmit={handleSubmit}>
             <input type="hidden" name="subject" value="New Portfolio Message" />
+
+            <div className={styles.inputGroup}>
+              <label htmlFor="purpose" className={styles.label}>How can I help you?</label>
+              <select id="purpose" name="purpose" className={styles.input} style={{ cursor: 'pointer', appearance: 'auto' }} required>
+                <option value="Freelance Project">Freelance Project</option>
+                <option value="Full-time Role">Full-time Role</option>
+                <option value="Technical Consulting">Technical Consulting</option>
+                <option value="Just saying hi">Just saying hi</option>
+              </select>
+            </div>
 
             <div className={styles.inputGroup}>
               <label htmlFor="name" className={styles.label}>Name</label>
@@ -75,7 +86,13 @@ export default function Contact() {
       </section>
 
       <footer className={styles.footer}>
-        <p>© {new Date().getFullYear()} Valentin. Built with Next.js & Pure CSS.</p>
+        <div className={styles.footerContent}>
+          <p>© {new Date().getFullYear()} Valentin. Built with Next.js & Pure CSS.</p>
+          <a href="mailto:valentin@valentinispas.com" className={styles.footerEmail}>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{marginRight: '8px'}}><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            valentin@valentinispas.com
+          </a>
+        </div>
       </footer>
     </>
   );

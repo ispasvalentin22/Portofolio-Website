@@ -66,3 +66,31 @@
   color: var(--text-secondary);
   font-size: 0.9rem;
 }
+
+.footerContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.footerEmail {
+  display: flex;
+  align-items: center;
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-size: 1rem;
+  font-family: var(--font-heading);
+  transition: all 0.3s ease;
+  padding: 8px 16px;
+  background: rgba(255, 87, 34, 0.05);
+  border: 1px solid rgba(255, 87, 34, 0.1);
+  border-radius: 8px;
+}
+
+.footerEmail:hover {
+  color: var(--accent-color);
+  background: rgba(255, 87, 34, 0.1);
+  border-color: rgba(255, 87, 34, 0.2);
+  transform: translateY(-2px);
+}

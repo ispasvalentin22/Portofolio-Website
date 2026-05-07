@@ -12,14 +12,10 @@ export default function Hero() {
           Full Stack Developer
         </h2>
         <p className="text-secondary" style={{ marginBottom: '40px', fontSize: '1.1rem', maxWidth: '600px', margin: '0 auto 40px' }}>
-          I build premium, aesthetic, and highly functional and complex web applications.
-          Bridging the gap between brilliant design and robust performance.
+          I build high-performance web applications that help businesses scale and improve operational efficiency. 
+          Bridging the gap between complex technical challenges and seamless user experiences.
         </p>
         <div className={styles.actions}>
-          <a href="#contact" className="btn-outline">Contact Me</a>
-          <a href="https://www.linkedin.com/in/ispasvalentin" target="_blank" rel="noopener noreferrer" className="btn-outline">
-            LinkedIn
-          </a>
           <a
             href="https://calendly.com/valentinmarian-ispas/30min"
             target="_blank"
@@ -27,6 +23,9 @@ export default function Hero() {
             className="btn-primary"
           >
             📅 Schedule a Call
+          </a>
+          <a href="#projects" className="btn-outline">
+            View My Work
           </a>
         </div>
       </div>
